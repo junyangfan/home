@@ -133,34 +133,29 @@ $('#hitokoto').click(function () {
     }
 });
 
-//获取天气
-//请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
-//请前往 https://dev.qweather.com/ 申请 key
-const add_id = "wrknltonr0foslhs"; // app_id
-const app_secret = "Nlh1c0F6d0ZDU2pDR0J3YVBVbkhudz09"; // app_secret
-const key = "433f0c48615a48dfaf2f2b2444297e79" // key
+// 获取天气
+// https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
+// https://www.seniverse.com/ 申请 key 心知天气
+const app_id = "omukknlcrtvjpksl"; // app_id
+const app_secret = "UXY1alhBN0w2dXUxK3VHQUpPamVJZz09"; // app_secret
+const key = "S-WRCMJQJTQs-zMT-" // key
 function getWeather() {
-    fetch("https://www.mxnzp.com/api/ip/self?app_id=" + add_id + "&app_secret=" + app_secret)
+    fetch("https://www.mxnzp.com/api/ip/self?app_id=" + app_id + "&app_secret=" + app_secret)
         .then(response => response.json())
         .then(data => {
             let str = data.data.city
             let city = str.replace(/市/g, '')
             $('#city_text').html(city);
-            fetch("https://geoapi.qweather.com/v2/city/lookup?location=" + city + "&number=1&key=" + key)
+            fetch(`https://api.seniverse.com/v3/weather/now.json?key=${key}&location=${city}&language=zh-Hans&unit=c`)
                 .then(response => response.json())
-                .then(location => {
-                    let id = location.location[0].id
-                    fetch("https://devapi.qweather.com/v7/weather/now?location=" + id + "&key=" + key)
-                        .then(response => response.json())
-                        .then(weather => {
-                            $('#wea_text').html(weather.now.text)
-                            $('#tem_text').html(weather.now.temp + "°C&nbsp;")
-                            $('#win_text').html(weather.now.windDir)
-                            $('#win_speed').html(weather.now.windScale + "级")
-                        })
+                .then((data) => {
+                    const now = data.results[0].now
+                    $('#wea_text').html(now.text)
+                    $('#tem_text').html(now.temperature + "°C")
                 })
+                .catch(() => ($('#wea_text').html('加载失败')))
         })
-        .catch(console.error);
+        .catch(() => ($('#wea_text').html('加载失败')));
 }
 
 getWeather();
