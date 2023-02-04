@@ -259,6 +259,11 @@ $("#telegram").mouseover(function () {
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
+$("#board").mouseover(function () {
+    $("#link-text").html("给我留言");
+}).mouseout(function () {
+    $("#link-text").html("通过这里联系我");
+});
 
 //自动变灰
 let myDate = new Date;
