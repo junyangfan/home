@@ -66,15 +66,6 @@ window.addEventListener('load', function () {
     element.src = "./js/music.js";
     document.body.appendChild(element);
 
-    //中文字体缓加载-此处写入字体源文件 （暂时弃用）
-    //先行加载简体中文子集，后续补全字集
-    //由于压缩过后的中文字体仍旧过大，可转移至对象存储或 CDN 加载
-    // const font = new FontFace(
-    //     "MiSans",
-    //     "url(" + "./font/MiSans-Regular.woff2" + ")"
-    // );
-    // document.fonts.add(font);
-
     //移动端去除鼠标样式
     if (Boolean(window.navigator.userAgent.match(/AppWebKit.*Mobile.*/))) {
         $('#g-pointer-2').css("display", "none");
@@ -87,16 +78,16 @@ setTimeout(function () {
 }, 3000);
 
 // 新春灯笼 （ 需要时可取消注释 ）
-// new_element=document.createElement("link");
-// new_element.setAttribute("rel","stylesheet");
-// new_element.setAttribute("type","text/css");
-// new_element.setAttribute("href","./css/lantern.css");
-// document.body.appendChild(new_element);
+new_element=document.createElement("link");
+new_element.setAttribute("rel","stylesheet");
+new_element.setAttribute("type","text/css");
+new_element.setAttribute("href","./css/lantern.css");
+document.body.appendChild(new_element);
 
-// new_element=document.createElement("script");
-// new_element.setAttribute("type","text/javascript");
-// new_element.setAttribute("src","./js/lantern.js");
-// document.body.appendChild(new_element);
+new_element=document.createElement("script");
+new_element.setAttribute("type","text/javascript");
+new_element.setAttribute("src","./js/lantern.js");
+document.body.appendChild(new_element);
 
 //获取一言
 fetch('https://v1.hitokoto.cn?max_length=24')
