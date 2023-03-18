@@ -283,6 +283,8 @@ for (let day of days) {
 
 //更多页面切换
 let shoemore = false;
+let t1 = $("#change").html()
+let t2 = $("#change1").html()
 $('#switchmore').on('click', function () {
     shoemore = !shoemore;
     if (shoemore && $(document).width() >= 990) {
@@ -291,8 +293,10 @@ $('#switchmore').on('click', function () {
         $("#change1").html("哎呀，这都被你发现了（ 再点击一次可关闭 ）");
     } else {
         $('#container').attr('class', 'container');
-        $("#change").html("Hello&nbsp;World&nbsp;!");
-        $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+        // $("#change").html('<i style="transform: rotate(-30deg); margin-right: 0.2rem;" class="fa-solid fa-thumbtack"></i>');
+        // $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+        $("#change").html(t1);
+        $("#change1").html(t2);
     }
 });
 
