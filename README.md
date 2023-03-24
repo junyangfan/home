@@ -1,7 +1,7 @@
 简体中文 | [English](./README_EN.md)
 
 <p>
-<strong><h2>Fancyの主页</h2></strong>
+<strong><h2>俊阳 | 主页</h2></strong>
 简单的小主页
 </p>
 
@@ -12,7 +12,7 @@
 
 >由于 CDN 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
 
-- [Fancyの主页](https://www.fanjunyang.zone)
+- [俊阳 | 主页](https://www.fanjunyang.zone)
 
 ### 功能
 
@@ -61,11 +61,11 @@
         "Oops !", //站点介绍标题点击后文字
         "哎呀，这都被你发现了 ( 再点击一次可关闭 )" //站点介绍内容点击后文字
     ],
-    "github": "Fancy", //Github 用户名
+    "github": "俊阳", //Github 用户名
     "qq": "996597002", //QQ
     "email": "junyang.fan@foxmail.com", //Email电子邮件
-    "telegram": "Fancy", //Telegram 用户名
-    "twitter": "Fancy", //Twitter用户名
+    "telegram": "俊阳", //Telegram 用户名
+    "twitter": "俊阳", //Twitter用户名
     "weather_api": "https://www.yiketianqi.com", //天气 API
     "link_1": [
         "https://blog.fanjunyang.zone/", //链接地址
@@ -84,7 +84,7 @@
         ]
     ],
     "Copyright_year": "2020", //站点起始年份
-    "Copyright_text": "Fancy" //版权
+    "Copyright_text": "俊阳" //版权
 }
 ```
 
