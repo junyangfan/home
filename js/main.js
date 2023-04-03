@@ -397,12 +397,12 @@ color: rgb(244,167,89);
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = '俊阳の主页'
+let title1 = '俊阳 | 主页'
 let content = `
 版 本 号：3.4
 更新日期：2022-07-24
 
-主页:  https://www.fanjunyang.zone
+主页:  https://fanjunyang.zone
 Github:  https://github.com/junyangfan
 `
 console.log(`%c${title1}
