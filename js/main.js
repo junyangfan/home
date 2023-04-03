@@ -226,7 +226,7 @@ $("#social").mouseover(function () {
 });
 
 $("#github").mouseover(function () {
-    $("#link-text").html("去 Github 看看");
+    $("#link-text").html("去Github看看");
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
@@ -236,12 +236,17 @@ $("#qq").mouseover(function () {
     $("#link-text").html("通过这里联系我");
 });
 $("#email").mouseover(function () {
-    $("#link-text").html("来封 Email");
+    $("#link-text").html("来封Email");
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
 $("#bilibili").mouseover(function () {
-    $("#link-text").html("来 B 站看看");
+    $("#link-text").html("去B站看看");
+}).mouseout(function () {
+    $("#link-text").html("通过这里联系我");
+});
+$("#youtube").mouseover(function () {
+    $("#link-text").html("去Youtube看看");
 }).mouseout(function () {
     $("#link-text").html("通过这里联系我");
 });
