@@ -4,7 +4,6 @@
 GitHub：https://github.com/junyangfan
 版权所有，请勿删除
 */
-
 //弹窗样式
 iziToast.settings({
     timeout: 10000,
@@ -399,12 +398,9 @@ let styleTitle2 = `
 font-size:12px;
 color: rgb(244,167,89);
 `
-let styleContent = `
-color: rgb(30,152,255);
-`
+let styleContent = ``
 let title1 = '俊阳IT主页'
 let content = `
-版 本 号：3.4
 更新日期：2023-05-10
 
 主页:  https://fanjunyang.zone
