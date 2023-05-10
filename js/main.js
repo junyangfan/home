@@ -1,6 +1,6 @@
 /*
 作者: 俊阳
-主页：https://www.fanjunyang.zone/
+主页：https://fanjunyang.zone/
 GitHub：https://github.com/junyangfan
 版权所有，请勿删除
 */
@@ -402,10 +402,10 @@ color: rgb(244,167,89);
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = '俊阳 | 主页'
+let title1 = '俊阳IT主页'
 let content = `
 版 本 号：3.4
-更新日期：2022-07-24
+更新日期：2023-05-10
 
 主页:  https://fanjunyang.zone
 Github:  https://github.com/junyangfan
