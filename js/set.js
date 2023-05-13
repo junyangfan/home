@@ -8,7 +8,7 @@ GitHub：https://github.com/junyangfan
 // 背景图片 Cookies 
 function setBgImg(bg_img) {
     if (bg_img) {
-        Cookies.set('bg_img', bg_img, {
+        Cookies && Cookies.set('bg_img', bg_img, {
             expires: 36500
         });
         return true;
