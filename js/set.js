@@ -18,12 +18,13 @@ function setBgImg(bg_img) {
 
 // 获取背景图片 Cookies
 function getBgImg() {
-    let bg_img_local = Cookies && Cookies.get('bg_img');
-    if (bg_img_local && bg_img_local !== "{}") {
-        return JSON.parse(bg_img_local);
-    } else {
+    if (Cookies === undefined) {
         setBgImg(bg_img_preinstall);
         return bg_img_preinstall;
+    }
+    let bg_img_local = Cookies.get('bg_img');
+    if (bg_img_local && bg_img_local !== "{}") {
+        return JSON.parse(bg_img_local);
     }
 }
 
