@@ -8,9 +8,7 @@ GitHub：https://github.com/junyangfan
 // 背景图片 Cookies 
 function setBgImg(bg_img) {
     if (bg_img) {
-        Cookies && Cookies.set('bg_img', bg_img, {
-            expires: 36500
-        });
+        localStorage && localStorage.setItem('jy_home_bg', JSON.stringify(bg_img));
         return true;
     }
     return false;
@@ -18,17 +16,14 @@ function setBgImg(bg_img) {
 
 // 获取背景图片 Cookies
 function getBgImg() {
-    if (Cookies === undefined) {
-        setBgImg(bg_img_preinstall);
-        return bg_img_preinstall;
+    if (localStorage && localStorage.getItem('jy_home_bg')) {
+        return JSON.parse(localStorage.getItem('jy_home_bg'));
     }
-    let bg_img_local = Cookies.get('bg_img');
-    if (bg_img_local && bg_img_local !== "{}") {
-        return JSON.parse(bg_img_local);
-    }
+    setBgImg(bg_img_perInstall);
+    return bg_img_perInstall;
 }
 
-let bg_img_preinstall = {
+let bg_img_perInstall = {
     "type": "1", // 1:默认背景 2:每日一图 3:随机风景 4:随机动漫
     "2": "https://api.dujin.org/bing/1920.php", // 每日一图
     "3": "https://api.ixiaowai.cn/gqapi/gqapi.php", // 随机风景
@@ -45,13 +40,13 @@ function setBgImgInit() {
             $('#bg').attr('src', `https://resource.fanjunyang.zone/home-nav-background${1 + ~~(Math.random() * 10)}.webp?imageMogr2/format/webp/interlace/1/rquality/80`) //随机默认壁纸
             break;
         case "2":
-            $('#bg').attr('src', bg_img_preinstall[2]); //必应每日
+            $('#bg').attr('src', bg_img_perInstall[2]); //必应每日
             break;
         case "3":
-            $('#bg').attr('src', bg_img_preinstall[3]); //随机风景
+            $('#bg').attr('src', bg_img_perInstall[3]); //随机风景
             break;
         case "4":
-            $('#bg').attr('src', bg_img_preinstall[4]); //随机动漫
+            $('#bg').attr('src', bg_img_perInstall[4]); //随机动漫
             break;
     }
 };
