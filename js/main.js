@@ -143,9 +143,11 @@ function getWeather() {
                     $('#wea_text').html(now.text)
                     $('#tem_text').html(now.temperature + "°C")
                 })
-                .catch(() => ($('#wea_text').html('加载失败')))
+                // .catch(() => ($('#wea_text').html('加载失败')))
+                .catch(() => ($('#wea_text').html('')))
         })
-        .catch(() => ($('#wea_text').html('加载失败')));
+        // .catch(() => ($('#wea_text').html('加载失败')));
+        .catch(() => ($('#wea_text').html('')));
 }
 
 getWeather();
