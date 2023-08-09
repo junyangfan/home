@@ -63,7 +63,7 @@
     ],
     "github": "俊阳", //Github 用户名
     "qq": "996597002", //QQ
-    "email": "junyang.fan@foxmail.com", //Email电子邮件
+    "email": "isjunyang.fan@foxmail.com", //Email电子邮件
     "telegram": "俊阳", //Telegram 用户名
     "twitter": "俊阳", //Twitter用户名
     "weather_api": "https://www.yiketianqi.com", //天气 API
