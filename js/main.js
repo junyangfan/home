@@ -61,9 +61,9 @@ window.addEventListener('load', function () {
     }, 800);
 
     //延迟加载音乐播放器
-    let element = document.createElement("script");
-    element.src = "./js/music.js";
-    document.body.appendChild(element);
+    // let element = document.createElement("script");
+    // element.src = "./js/music.js";
+    // document.body.appendChild(element);
 
     //移动端去除鼠标样式
     if (Boolean(window.navigator.userAgent.match(/AppWebKit.*Mobile.*/))) {
