@@ -1,7 +1,7 @@
 简体中文 | [English](./README_EN.md)
 
 <p>
-<strong><h2>俊阳IT主页</h2></strong>
+<strong><h2>IT主页</h2></strong>
 简单的小主页
 </p>
 
@@ -12,7 +12,7 @@
 
 >由于 CDN 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
 
-- [俊阳IT主页](https://fanjunyang.zone)
+- [IT主页](https://fanjunyang.zone)
 
 ### 功能
 

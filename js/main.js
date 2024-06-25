@@ -401,7 +401,7 @@ font-size:12px;
 color: rgb(244,167,89);
 `
 let styleContent = ``
-let title1 = '俊阳IT主页'
+let title1 = 'IT主页'
 let content = `
 更新日期：2023-05-10
 
