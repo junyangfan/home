@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "Blog",
+    "name": "博客",
+    "link": "https://blog.fjy.zone"
+  },
+  {
+    "icon": "Cloud",
+    "name": "网盘",
+    "link": "https://drive.fjy.zone"
+  },
+  {
+    "icon": "Compass",
+    "name": "网址导航",
+    "link": "https://blog.fjy.zone/nav"
+  },
+  {
+    "icon": "ChartLine",
+    "name": "流量统计",
+    "link": "https://analysis.fjy.zone/share/txigJrS8cU3VBSb3/fjy.zone"
+  },
+  {
+    "icon": "Bomb",
+    "name": "网址检测",
+    "link": "https://uptime.fjy.zone/status/monitor"
+  },
+  {
+    "icon": "Satellite",
+    "name": "小鸡探针",
+    "link": "https://status.fjy.zone"
+  }
+]
