@@ -1,44 +1,6 @@
-简体中文 | [English](./README_EN.md)
-
-<p>
-<strong><h2>無名の主页</h2></strong>
-简单的小主页，原来的看够了，重新弄了一个
-</p>
-
-![無名の主页](/screenshots/main.jpg)
 
 > 主页的 Logo 字体已经过压缩，若用本站 Logo 以外的字母会变回默认字体，这里是 [完整字体](https://file.imsyy.top/font/Other/Pacifico-Regular.ttf)，若无法下载，可将字体目录下的 `Pacifico-Regular-all.ttf` 进行替换
 
-### 👀 Demo
-
-> 由于 CDN 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
-
-- [無名の主页](https://www.imsyy.top)
-- [無名の主页 - Dev](https://home-imsyy.vercel.app)
-- [無名の主页 - 备用线路](https://home-5iw.pages.dev)
-
-### 🎉 功能
-
-- [x] 载入动画
-- [x] 站点简介
-- [x] Hitokoto 一言
-- [x] 日期及时间
-- [x] 实时天气
-- [x] 时光进度条
-- [x] 音乐播放器
-- [x] 移动端适配
-
-### ⚙️ 自动部署
-
-如果遇到构建环境或者打包过程出现错误，则可以采用 `Github Actions` 来进行自动构建
-
-- 在成功 `fork` 仓库后，前往 `Actions` 页面，若您是首次开启，则会出现下面的提示，点击开启
-
-  ![步骤1](/screenshots/step1.jpg)
-
-- 然后在仓库中进行任意修改后均会触发工作流的运行，在工作流完成后，会在下方生成一个可供下载的压缩包，这就是构建出的静态文件，可自行上传至服务器
-
-  ![步骤2](/screenshots/step2.jpg)
 
 ### ⚙️ 手动部署
 
@@ -77,15 +39,6 @@ docker build -t home .
 docker run -p 12445:12445 -d home
 ```
 
-### ⚙️ Vercel 部署
-
-> 其他部署平台大致相同，在此不做说明
-
-1. 点击本仓库右上角的 `Fork`，复制本仓库到你的 `GitHub` 账号
-2. 复制 `/.env.example` 文件并重命名为 `/.env`（ 重要 ）
-3. 按需修改 `/.env` 文件中的配置
-4. 点击 `Deploy`，即可成功部署
-
 ### 网站链接
 
 在 `src/assets/siteLinks.json` 中可以自定义网站链接（以指向自己的网站）:
@@ -94,7 +47,7 @@ docker run -p 12445:12445 -d home
 {
   "icon": "Blog",
   "name": "博客",
-  "link": "https://blog.imsyy.top/"
+  "link": "https://blog.fjy.zone/"
 },
 ```
 
@@ -149,7 +102,7 @@ const siteIcon = {
 
 ```bash
 # 歌曲 API 地址
-VITE_SONG_API = "https://api-meting.imsyy.top"
+VITE_SONG_API = "https://api-meting.fjy.zone"
 # 歌曲服务器 ( netease-网易云, tencent-qq音乐 )
 VITE_SONG_SERVER = "netease"
 # 播放类型 ( song-歌曲, playlist-播放列表, album-专辑, search-搜索, artist-艺术家 )
@@ -166,40 +119,6 @@ VITE_SONG_ID = "7452421335"
 >
 > `https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css`
 
-<details>
-<summary>旧版方式</summary>
-
-> 由于本项目引入了中文字体，需要压缩中文字体以提高网页加载速度（ 也可以取消使用中文字体 ）
-
-#### 中文字体去除繁体
-
-- 安装 `Python 3.7` 和 `pip`
-- 运行 `pip install fonttools`
-- 下载 [sc_unicode.txt](https://gist.githubusercontent.com/imaegoo/d64e5088b723c2e02c40985f55ff12db/raw/5ebd2ce49418c73459a9dfe050483409306a6c1d/sc_unicode.txt)
-- 运行 `pyftsubset 字体名称.ttf --unicodes-file=sc_unicode.txt`
-
-#### 字体进一步压缩
-
-- 编译安装 `Google woff2`
-
-```bash
-sudo apt-get install -y git g++ make
-git clone --recursive https://github.com/google/woff2.git
-cd woff2
-make clean all
-```
-
-- 再压缩字体
-
-```
-./woff2_compress ./字体名称.ttf
-```
-
-- 最终可对原字体进行缓加载，**先行加载压缩后的字体**
-
-> 详细信息可前往 [虹墨空间站](https://www.imaegoo.com/2020/chinese-font-compress/) 查看原文
-
-</details>
 
 ### 网站图标及网站背景
 
@@ -237,8 +156,3 @@ if (type == 0) {
 - [高德开放平台](https://lbs.amap.com/)
 - [Hitokoto 一言](https://hitokoto.cn/)
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=imsyy/home&type=Date)](https://star-history.com/#imsyy/home&Date)
-
-<a title="SSL" target="_blank" href="https://myssl.com/seal/detail?domain=blog.imsyy.top"><img src="https://img.shields.io/badge/MySSL-安全认证-brightgreen"></a>&nbsp;<a title="CDN" target="_blank" href="https://cdnjs.com/"><img src="https://img.shields.io/badge/CDN-Cloudflare-blue"></a>&nbsp;<a title="Copyright" target="_blank" href="https://imsyy.top/"><img src="https://img.shields.io/badge/Copyright%20%C2%A9%202020--2023-%E7%84%A1%E5%90%8D-red"></a>
