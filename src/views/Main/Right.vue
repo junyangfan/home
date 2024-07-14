@@ -38,12 +38,10 @@ const siteUrl = computed(() => {
     width: 100%;
     font-family: "Pacifico-Regular";
     font-size: 2.25rem;
-    position: fixed;
-    top: 6%;
-    left: 0;
     text-align: center;
     transition: transform 0.3s;
     animation: fade 0.5s;
+    margin-bottom: 10px;
     &:active {
       transform: scale(0.95);
     }

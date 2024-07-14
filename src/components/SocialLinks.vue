@@ -59,7 +59,7 @@ const socialTip = ref("联系我吧 ~");
     a {
       display: inherit;
       .icon {
-        margin: 0 12px;
+        margin: 0 10px;
         transition: transform 0.3s;
         &:hover {
           transform: scale(1.1);

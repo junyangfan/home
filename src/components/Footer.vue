@@ -71,14 +71,15 @@ const siteUrl = computed(() => {
 
 <style lang="scss" scoped>
 #footer {
-  width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
+  right: 0;
+  width: 100%;
   height: 46px;
   line-height: 46px;
   text-align: center;
-  z-index: 0;
+  z-index: 9;
   font-size: 14px;
   // 文字不换行
   word-break: keep-all;
