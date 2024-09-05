@@ -2,43 +2,49 @@
   {
     "name": "Github",
     "icon": "/images/icon/github.png",
-    "tip": "去 Github 看看",
+    "tip": "Github ~",
     "url": "https://github.com/junyangfan"
   },
   {
     "name": "BiliBili",
     "icon": "/images/icon/bilibili.png",
-    "tip": "(゜-゜)つロ ~",
+    "tip": "(゜-゜)つロ",
     "url": "https://space.bilibili.com/424232729"
   },
   {
     "name": "QQ",
     "icon": "/images/icon/qq.png",
-    "tip": "有什么事吗 ?",
+    "tip": "QQ ~",
     "url": "https://res.abeim.cn/api/qq/?qq=996597002"
   },
   {
     "name": "Email",
     "icon": "/images/icon/email.png",
-    "tip": "来封 Email ~",
+    "tip": "Email ~",
     "url": "mailto:996597002@qq.com"
   },
   {
     "name": "Board",
     "icon": "/images/icon/board.png",
-    "tip": "给我留言吧 ~",
+    "tip": "留言 ~",
     "url": "https://blog.fjy.zone/board"
   },
   {
     "name": "Youtube",
     "icon": "/images/icon/youtube.png",
-    "tip": "看一看油管 ~",
+    "tip": "油管 ~",
     "url": "https://www.youtube.com/@it_zone_ytb"
+  },
+  {
+    "name": "Twitter/X",
+    "icon": "/images/icon/x.png",
+    "tip": "推特/X ~",
+    "url": "https://x.com/it_zone_x"
   },
   {
     "name": "Telegram",
     "icon": "/images/icon/telegram.png",
-    "tip": "你懂的 ~",
+    "tip": "电报 ~",
     "url": "https://t.me/it_zone_group"
   }
 ]
