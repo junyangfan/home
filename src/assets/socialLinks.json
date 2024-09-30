@@ -12,10 +12,11 @@
     "url": "https://space.bilibili.com/424232729"
   },
   {
-    "name": "QQ",
-    "icon": "/images/icon/qq.png",
-    "tip": "QQ ~",
-    "url": "https://res.abeim.cn/api/qq/?qq=996597002"
+    "name": "群组",
+    "icon": "/images/icon/group.png",
+    "tip": "群组 ~",
+    "isImg": true,
+    "url": "https://assets.fjy.zone/images/group-qrcode.png"
   },
   {
     "name": "Email",

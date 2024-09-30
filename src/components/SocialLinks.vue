@@ -2,16 +2,28 @@
   <!-- 社交链接 -->
   <div class="social">
     <div class="link">
-      <a
-        v-for="item in socialLinks"
-        :key="item.name"
-        :href="item.url"
-        target="_blank"
-        @mouseenter="socialTip = item.tip"
-        @mouseleave="socialTip = '联系我吧 ~'"
-      >
-        <img class="icon" :src="item.icon" height="24" />
-      </a>
+      <template v-for="item in socialLinks" :key="item.name">
+        <template v-if="item.isImg">
+          <el-popover trigger="hover" placement="top" :popper-style="{ padding: '0' }">
+            <template #default>
+              <img height="148" :src="item.url">
+            </template>
+            <template #reference>
+              <img @mouseenter="socialTip = item.tip" @mouseleave="socialTip = '联系我吧 ~'" class="icon" :src="item.icon" height="24">
+            </template>
+          </el-popover>
+        </template>
+        <template v-else>
+          <a
+            :href="item.url"
+            target="_blank"
+            @mouseenter="socialTip = item.tip"
+            @mouseleave="socialTip = '联系我吧 ~'"
+          >
+            <img class="icon" :src="item.icon" height="24" />
+          </a>
+        </template>
+      </template>
     </div>
     <span class="tip">{{ socialTip }}</span>
   </div>
@@ -39,11 +51,10 @@ const socialTip = ref("联系我吧 ~");
   backdrop-filter: blur(0);
   animation: fade 0.5s;
   transition:
-    background-color 0.3s,
-    backdrop-filter 0.3s;
+  background-color 0.3s,
+  backdrop-filter 0.3s;
   @media (max-width: 840px) {
     max-width: 100%;
-    justify-content: center;
     .link {
       justify-content: space-evenly !important;
     }
@@ -55,18 +66,17 @@ const socialTip = ref("联系我吧 ~");
   .link {
     display: flex;
     align-items: center;
-    justify-content: center;
     a {
       display: inherit;
-      .icon {
-        margin: 0 10px;
-        transition: transform 0.3s;
-        &:hover {
-          transform: scale(1.1);
-        }
-        &:active {
-          transform: scale(1);
-        }
+    }
+    .icon {
+      margin: 0 10px;
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: scale(1);
       }
     }
   }
