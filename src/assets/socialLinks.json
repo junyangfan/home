@@ -16,7 +16,7 @@
     "icon": "/images/icon/group.png",
     "tip": "群组 ~",
     "isImg": true,
-    "url": "https://assets.fjy.zone/images/group-qrcode.png"
+    "url": "https://static.fjy.zone/images/group-qrcode.png"
   },
   {
     "name": "Email",
