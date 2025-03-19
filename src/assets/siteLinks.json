@@ -15,6 +15,11 @@
     "link": "https://shop.fjy.zone"
   },
   {
+    "icon": "CompassRegular",
+    "name": "AimeTap导航站",
+    "link": "https://aimetap.com"
+  },
+  {
     "icon": "ChartLine",
     "name": "流量统计",
     "link": "https://analysis.fjy.zone/share/txigJrS8cU3VBSb3/fjy.zone"
@@ -23,10 +28,5 @@
     "icon": "Bomb",
     "name": "网址检测",
     "link": "https://uptime.fjy.zone/status/monitor"
-  },
-  {
-    "icon": "Satellite",
-    "name": "小鸡探针",
-    "link": "https://status.fjy.zone"
   }
 ]
