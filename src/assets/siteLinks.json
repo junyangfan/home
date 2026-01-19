@@ -15,18 +15,18 @@
     "link": "https://shop.fjy.zone"
   },
   {
+    "icon": "ClipboardList",
+    "name": "留言板",
+    "link": "https://blog.fjy.zone/board"
+  },
+  {
     "icon": "PlaneDeparture",
     "name": "机场&软件",
     "link": "https://vxn.fjy.zone"
   },
   {
-    "icon": "CompassRegular",
-    "name": "导航站",
-    "link": "https://nav.fjy.zone"
-  },
-  {
     "icon": "Bomb",
-    "name": "网址检测",
+    "name": "站点检测",
     "link": "https://uptime.fjy.zone/status/monitor"
   }
 ]

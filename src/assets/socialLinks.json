@@ -25,12 +25,6 @@
     "url": "mailto:isjy_fan@163.com"
   },
   {
-    "name": "Board",
-    "icon": "/images/icon/board.png",
-    "tip": "留言 ~",
-    "url": "https://blog.fjy.zone/board"
-  },
-  {
     "name": "Youtube",
     "icon": "/images/icon/youtube.png",
     "tip": "油管 ~",
