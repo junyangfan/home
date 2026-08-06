@@ -29,11 +29,5 @@
     "icon": "/images/icon/youtube.png",
     "tip": "油管 ~",
     "url": "https://www.youtube.com/@it_zone_ytb"
-  },
-  {
-    "name": "Telegram",
-    "icon": "/images/icon/telegram.png",
-    "tip": "电报 ~",
-    "url": "https://t.me/it_zone_group"
   }
 ]
